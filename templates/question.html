@@ -1,0 +1,63 @@
+{% extends "inc/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class ="row">
+        <div class="col-8">
+
+<div class="question1">
+            <div class="row ">
+              <div class="col-2">
+                <div class ="profilephoto1">
+                  <img src="../static/img/dovolniy.JPG" alt="..."/>
+
+                </div>
+                 <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                <label class="btn btn-outline-light like-btn" for="btnradio1">&#x2764;&#xfe0f;</label>
+
+                <input type="radio" class="btn-check like-btn" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-light like-btn" for="btnradio2">💔</label>
+              </div>
+              </div>
+              <div class="col-10">
+                <h2 class="question-title">{{ question.title}}</h2>
+                <div class=""><p>
+               {{ question.text}}
+                </div>
+              </div>
+              <div class="row">
+              <div class="col-2">
+
+              </div>
+                <div class="tags col-10">
+                <div class="col-10">
+                  <b class="tag">Тэги:</b>
+                    {% for tag in question.tags %}
+                  <a class="tag-text" href="tags.html">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                  </div>
+                </div>
+          </div>
+  </div>
+
+
+
+
+
+{% for answer in answers %}
+          {% include 'inc/answer.html' %}
+{% endfor %}
+
+
+             {% include 'inc/paginator.html' %}
+    <div class="question2">
+   <p><textarea class="search-input-text1 form-control" name="comment"  required placeholder="Напишите ваш ответ здесь" ></textarea></p>
+              </div>
+            <button class="btn btn-primary ButtonLink1" type="submit">Ответить</button>
+
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "inc/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <h1>Настройки: Ангелина Решетникова</h1>
+
+      <div class ="row">
+        <div class="col-8 question">
+            <div class ="login">
+            <div class="row">
+              <div class="col-3">
+                <h5>Login</h5>
+              </div>
+              <div class="col-9">
+                  <input class="form-control me-3 login-input" type="search" value="lin_linich" aria-label="Search">
+              </div>
+          </div>
+            </div>
+
+            <div class ="login">
+            <div class="row">
+              <div class="col-3">
+                <h5>Email</h5>
+              </div>
+              <div class="col-9">
+                  <input class="form-control me-3 login-input" type="search" value="reshetlina@mail.ru" aria-label="Search">
+              </div>
+            </div>
+            </div>
+
+               <div class ="login">
+            <div class="row">
+              <div class="col-3">
+                <h5>NickName</h5>
+              </div>
+              <div class="col-9">
+                  <input class="form-control me-3 login-input" type="search" value="Лин Линыч" aria-label="Search">
+              </div>
+
+               <div class ="login">
+            <div class="row">
+              <div class="col-3">
+                <h5>Upload avatar</h5>
+              </div>
+              <div class="col-9">
+                  <input class="set-avatar" type="image" name="image"  src="../static/img/dovolniy.JPG" width="140">
+
+
+
+              <p></p><p><input name="photo" type="file" ></p>
+
+              </div>
+            </div>
+            </div>
+
+                 <div class ="login">
+            <div class="row">
+              <div class="col-3">
+              </div>
+              <div class="col-9">
+                  <form action="">
+                  <button class="btn btn-primary ButtonLink1" type="submit">Сохранить</button>
+                  </form>
+              </div>
+          </div>
+            </div>
+
+
+          </div>
+            </div>
+
+{% endblock %}

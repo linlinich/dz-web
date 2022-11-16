@@ -1,0 +1,37 @@
+{% load static %}
+
+<div class="question">
+            <div class="row">
+              <div class="col-2">
+                <div class ="profilephoto">
+                  <img src="{% static 'img/спящий.JPG' %}" alt="..."/>
+                </div>
+              </div>
+              <div class="col-10">
+                <h2><a class="question-title" href="{% url 'question' question_id=question.id  %}">{{ question.title }}</a></h2>
+                <div class="truncate"><p>
+                  {{ question.text }} </div>
+              </div>
+              <div class="row">
+              <div class="col-2">
+              <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio1" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-light like-btn" for="btnradio3">&#x2764;&#xfe0f;</label>
+
+                <input type="radio" class="btn-check like-btn" name="btnradio1" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-light like-btn" for="btnradio4">💔</label>
+              </div>
+              </div>
+                <div class="tags col-10">
+                <div class="col-10">
+
+                  <a class="answers" href="{% url 'question' question_id=question.id  %}">answers({{ question.answers_number }})</a>
+                  <b class="tag">Тэги:</b>
+                {% for tag in question.tags %}
+                  <a class="tag-text" href="tags.html">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                  </div>
+                </div>
+          </div>
+        </div>

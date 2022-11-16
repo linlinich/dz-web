@@ -1,0 +1,53 @@
+{% extends "inc/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <h1>Новый вопрос</h1>
+
+      <div class ="row">
+        <div class="col-8 question">
+            <div class ="login">
+            <div class="row">
+              <div class="col-3">
+                <h5>Заголовок</h5>
+              </div>
+              <div class="col-9">
+                <input class="search-input me-3 form-control" type=text name="focus" required placeholder="Как написать сайт?"></input>
+              </div>
+          </div>
+            </div>
+
+            <div class ="login">
+            <div class="row">
+              <div class="col-3">
+                <h5>Текст вопроса</h5>
+              </div>
+              <div class="col-9">
+                 <p><textarea class="search-input-text form-control" name="comment"  required placeholder="И правда, как?                                                                                                          Я без понятия!" ></textarea></p>
+              </div>
+
+                <div class ="login">
+                <div class="row">
+              <div class="col-3">
+                <h5>Тэги</h5>
+              </div>
+              <div class="col-9">
+                <input class="search-input me-3 form-control" type=text name="text" required placeholder="дом семья работа"></input>
+              </div>
+          </div>
+                </div>
+                 <div class ="login">
+            <div class="row">
+              <div class="col-3">
+              </div>
+              <div class="col-9">
+                  <button class="btn btn-primary ButtonLink1" type="submit">Отправить вопрос</button>
+              </div>
+          </div>
+            </div>
+            </div>
+            </div>
+
+{% endblock %}

@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+{% load static %}
+
+<html lang="ru" class="h-100">
+  <head>
+      <title>Домашка по вебу</title>
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-xl navbar-dark fixed-top ">
+    <div class="container-fluid mx-auto top-fix">
+      <a href="{% url 'index' %}"><img class="vk" src="{% static 'img/vk.png' %}" alt="..."/></a>
+      <a class="navbar-brand" href="{% url 'index' %}">VK ОТВЕТЫ</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mb-5 mb-md-0">
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-3 search-input" type="search" placeholder="Поиск вопроса" aria-label="Search">
+          <a class="btn btn-outline-light ButtonLink1" href="{% url 'askq' %}">Задать вопрос</a>
+        </form>
+      </div>
+
+        {% if is_auth %}
+      <div class="row">
+         <form class="d-flex" role="search">
+        <a href="#"><img class="avatar" src="{% static 'img/dovolniy.JPG' %}" alt="..."/></a>
+          <div class="col-6">
+            <p></p>
+            <a class="username" href="#">Ангелина Решетникова</a>
+            <p><a class="logout" href="../not-login.html">Выйти</a></p>
+          </div>
+
+          <div class="col-3 settings-bar">
+          <a class="set-text ButtonLink>" href="{% url 'settings' %}"><img class="settings" src="{% static 'img/settings.jpg' %}" alt="..."/>Настройки</a>
+          </div>
+        </form>
+        </div>
+
+        {% else  %}
+         <form class="d-flex" role="search">
+          <div class="col-6">
+            <p></p>
+            <a class="username left" href="{% url 'register' %}">Войти</a>
+            <p><a class="username left" href="{%  url 'registration' %}">Зарегистироваться</a></p>
+          </div> </form>
+
+        {% endif %}
+      </div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main>
+  <div class="container">
+      {% block content %}
+      {% endblock %}
+  </div>
+</nav>
+
+
+      <div class="col-4">
+        <div class="popular-tag">
+        <h1 class="pt">Популярные тэги</h1>
+
+                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Рисование</a>
+                <a class="p-high ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Дизайн</a>
+                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Web-разработка</a>
+                <a class="p-high ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">UX-исследования</a>
+                <a class="p-low ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">A/Btest</a>
+                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Мобильная разбаботка</a>
+                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Самоорганизация</a>
+                <a class="p-middle ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Отдых</a>
+          </div>
+          <h1 class="best-members">Лучшие пользователи</h1>
+                <p class="dline"><a class="best-users" href="#">Ангелина Решетникова</a></p>
+                <p class="dline"><a class="best-users" href="#">Мария Лопаткина</a></p>
+                <p class="dline"><a class="best-users" href="#">Виктор Казаков</a></p>
+                <p class="dline"><a class="best-users" href="#">Макс дрягин</a></p>
+                <p class="dline"><a class="best-users" href="#">Лиза Шерман</a></p>
+        </div>
+      </div>
+
+  </div>
+  </div>
+</div>
+</main>
+
+
+
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

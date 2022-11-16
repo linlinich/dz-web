@@ -1,0 +1,461 @@
+.container {
+    padding: 130px 15px 10px;
+    margin-bottom: 20px;
+}
+
+.h1 {
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+.question {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.question1 {
+    border-bottom: 2px solid #7B68EE;
+    padding: 20px;
+}
+
+.set-avatar {
+    border: 2px solid #7B68EE;
+    border-radius: 30px;
+}
+
+.question2 {
+    border-top: 2px solid #7B68EE;
+    padding-top: 20px;
+}
+
+.question-text {
+    margin-bottom: 20px;
+    align-items: flex-end;
+    display: flex;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    align-items: left;
+    margin-right:10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.settings {
+    width: 30px;
+    height: 30px;
+    border-radius: 20%;
+    overflow: hidden;
+    margin-left: 20px;
+    align-items: left;
+}
+
+.set-text
+{
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    align-items: left;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-width: auto;
+
+}
+
+.pagination {
+    vertical-align: bottom;
+}
+
+form
+{
+    align-items: center;
+}
+
+ul
+{
+    text-align: center;
+}
+
+.navbar-collapse
+{
+    align-content: center;
+}
+
+.profile
+{
+    color: black;
+}
+
+.infouser 
+{
+    font-size: 10px;
+    border: 2px solid gray;
+    border-radius: 3px;
+}
+
+.infouser-title
+{
+    font-size: 20px;
+}
+
+
+
+.profilephoto
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    overflow: hidden;
+    align-content: center;
+}
+
+
+.profilephoto1
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    overflow: hidden;
+    align-content: center;
+}
+
+.ButtonLink
+{
+  white-space: nowrap;
+  text-align: center;
+}
+
+.ButtonLink1
+{
+  white-space: nowrap;
+  text-align: center;
+  background:
+}
+
+.tags
+{
+    display: grid;
+  align-items: end;
+}
+
+.tag-text
+{
+    color: grey;
+}
+
+ .truncate {
+    padding: 0px;
+  }
+
+ .truncate p {
+    margin: 0;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .like-btn {
+    margin-top: 20px;
+  }
+
+.pag {
+  --bs-pagination-color: #4682B4;
+  --bs-pagination-hover-color: #4682B4;
+
+}
+
+
+.tag{
+color: #696969;
+}
+
+.answers{
+    color: #4682B4;
+    margin-right: 30px;
+}
+
+.hot-q {
+    margin-left: 30px;
+    font-size: 22px;
+    color: green;
+    vertical-align: middle;
+}
+
+.popular-tag {
+    margin-left: 50px;
+    word-spacing: 5px;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+
+.p-none
+{
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+}
+
+.p-low
+{
+    font-size: 20px;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.p-high
+{
+    font-size: 24px;
+    color: red;
+    text-decoration: none;
+}
+
+.p-middle
+{
+    font-size: 22px;
+    color: #32CD32;
+    text-decoration: none;
+}
+
+.pt
+{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.best-members
+{
+    margin-left: 50px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    font-size: 32px;
+}
+
+.best-users
+{
+    margin-left: 50px;
+    color: black;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: flex-end;
+}
+
+.dline {
+    line-height: 1.3em;
+}
+
+.vk {
+    width:60px;
+    height:60px;
+    padding:10px;
+}
+
+.search
+{
+    width: 700px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.login-input
+{
+    width: 300px;
+    height: 40px;
+    display: flex;
+  align-items: center
+}
+
+.username
+{
+
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.logout
+{
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    align-items: flex-end;
+}
+
+.settings-bar{
+    align-items: right;
+    margin-left: 15px;
+}
+
+body {
+    margin: 0px;
+}
+
+
+.navbar-dark {
+  --bs-navbar-color: rgba(255, 255, 255, 0.55);
+  --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+  --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+  --bs-navbar-active-color: #fff;
+    background: url(gr1.png);
+    background-size: cover;
+  --bs-navbar-brand-color: #fff;
+  --bs-navbar-brand-hover-color: #fff;
+  --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+ height:120px;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.top-fix{
+  --bs-gutter-y: 0;
+  width: 100%;
+  position:absolute; /* добавили */
+	top:0;
+}
+
+#wrapper{
+	width: 320px;
+	left: 50%;
+	margin-left: -160px;
+	top: 50%;
+	margin-top: -75px;
+}
+
+/* === Sign in Form === */
+#signin {
+	height: 90px;
+	width: 300px;
+	border-radius: 8px;
+	position: relative;
+}
+#signin::before {
+	display: block;
+	position: relative;
+	height: 2px;
+	background: rgb(52, 56, 61);
+	content: '';
+	top: 44px;
+	margin-left: 20px;
+	z-index: 1;
+}
+#signin input:first-of-type{
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+#signin input:last-of-type{
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+#signin  input[type="text"], #signin  input[type="password"], #signin button[type="submit"]{
+	background: rgb(28, 30, 33);
+	box-shadow: inset -100px -100px 0 rgb(28, 30, 33); /*Prevent yellow autofill color*/
+	color: rgb(52, 56, 61);
+}
+#signin  input[type="text"], #signin  input[type="password"]{
+	position: relative;
+	display: block;
+	width: 280px;
+	height: 45px;
+	border: 0;
+	outline: 0;
+	top: -2px;
+	padding: 0 0 0 20px;
+	font-weight: 700;
+}
+#signin  input[type="text"]:focus, #signin  input[type="password"]:focus{
+	color: rgb(255, 255, 255);
+}
+#signin button[type="submit"]{
+	display: block;
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	color: rgb(52, 56, 61);
+	border-radius: 50px;
+	outline: 0;
+	z-index: 2;
+	top: 19px;
+	right: -24px;
+	border: 6px solid rgb(52, 56, 61);
+	font-size: 25px;
+	text-indent: 0px;
+	padding-left: 9px;
+	padding-bottom: 3px;
+	text-align: center;
+}
+#signin button[type="submit"]:hover{
+	color: rgb(0, 126, 165);
+	text-shadow: 0 0 10px rgb(0, 126, 165);
+	cursor: pointer;
+}
+#signin p {
+	color: rgb(79, 85, 97);
+	padding: 0 20px;
+	font-weight: 700;
+	font-size: 12px;
+	margin: 5px 0 0 0;
+}
+#signin p > a{
+	color: rgb(111, 119, 135);
+	text-decoration: none;
+}
+#signin p > a:hover{
+	border-bottom: 1px solid;
+}
+
+.login {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.search-input {
+  border: 1px solid #dadada;
+  height: 40px;
+  width: 100%;
+  padding: 10px 30px;
+  vertical-align: bottom;
+  box-sizing: border-box;
+}
+
+.search-input-text {
+  border: 1px solid #dadada;
+  height: 200px;
+  width: 100%;
+  padding: 10px 30px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.search-input-text1 {
+
+  border: 2px solid grey;
+  height: 150px;
+  width: 100%;
+  padding: 10px 30px;
+}
+
+.left{
+    margin: 10px;
+    padding: 10px;
+}
+
+.question-title {
+    color: black;
+    text-decoration: none;
+}
