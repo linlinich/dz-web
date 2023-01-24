@@ -4,7 +4,7 @@
 
 {% block content %}
 
-     <h1>Новые вопросы <a class="hot-q" href="#">Популярные вопросы</a></h1>
+    <h1>Вопросы по тегу: {{ tag }}</h1>
     <div class ="row">
         <div class="col-8">
 
@@ -21,3 +21,4 @@
 {% include "inc/paginator.html" with page=questions %}
 
 {% endblock %}
+

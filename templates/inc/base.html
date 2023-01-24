@@ -1,5 +1,4 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
 {% load static %}
 
 <html lang="ru" class="h-100">
@@ -74,14 +73,9 @@
         <div class="popular-tag">
         <h1 class="pt">Популярные тэги</h1>
 
-                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Рисование</a>
-                <a class="p-high ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Дизайн</a>
-                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Web-разработка</a>
-                <a class="p-high ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">UX-исследования</a>
-                <a class="p-low ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">A/Btest</a>
-                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Мобильная разбаботка</a>
-                <a class="p-none ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Самоорганизация</a>
-                <a class="p-middle ButtonLink" href="{% url 'tags' tags_id = tags.id  %}">Отдых</a>
+                {% for tag in popular_tags %}
+                    {% include 'inc/tag.html' %}
+                {% endfor %}
           </div>
           <h1 class="best-members">Лучшие пользователи</h1>
                 <p class="dline"><a class="best-users" href="#">Ангелина Решетникова</a></p>

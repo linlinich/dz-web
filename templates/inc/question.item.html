@@ -27,9 +27,9 @@
 
                   <a class="answers" href="{% url 'question' question_id=question.id  %}">answers({{ question.answers_number }})</a>
                   <b class="tag">Тэги:</b>
-                {% for tag in question.tags %}
-                  <a class="tag-text" href="tags.html">{{ tag }}</a>
-                    {% endfor %}
+                            {% for tag in question.tags %}
+                            <a href="{% url 'tag' tag_name=tag %}">{{ tag }}</a>
+                            {% endfor %}
                 </div>
                   </div>
                 </div>

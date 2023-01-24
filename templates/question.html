@@ -35,9 +35,9 @@
                 <div class="tags col-10">
                 <div class="col-10">
                   <b class="tag">Тэги:</b>
-                    {% for tag in question.tags %}
-                  <a class="tag-text" href="tags.html">{{ tag }}</a>
-                    {% endfor %}
+            {% for tag in question.tags %}
+                <a href="{% url 'tag' tag_name=tag %}">{{ tag }}</a>
+            {% endfor %}
                 </div>
                   </div>
                 </div>
@@ -52,12 +52,10 @@
           {% include 'inc/answer.html' %}
 {% endfor %}
 
-
-             {% include 'inc/paginator.html' %}
     <div class="question2">
    <p><textarea class="search-input-text1 form-control" name="comment"  required placeholder="Напишите ваш ответ здесь" ></textarea></p>
               </div>
             <button class="btn btn-primary ButtonLink1" type="submit">Ответить</button>
-
+{% include "inc/paginator.html" with page=answers %}
 
 {% endblock %}

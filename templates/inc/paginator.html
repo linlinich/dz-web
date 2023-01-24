@@ -1,7 +1,13 @@
-  <ul class="pagination pag">
-    <li class="page-item"><a class="page-link" href="#">Назад</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Вперед</a></li>
-  </ul>
+<div class="pagination">
+    <span class="step-links">
+        {% if page.has_previous %}
+            <a href="?page={{ page.previous_page_number }}">Назад</a>
+        {% endif %}
+        <span class="current">
+            Страница {{ page.number }} из {{ page.paginator.num_pages }}.
+        </span>
+        {% if page.has_next %}
+            <a href="?page={{ page.next_page_number }}">Вперед</a>
+        {% endif %}
+    </span>
+</div>
